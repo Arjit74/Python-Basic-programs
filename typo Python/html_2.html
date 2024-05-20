@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function msg() {
+            var i, n, fact = 1;
+            n = Number(document.getElementById("n").value);
+            for (i = n; i >= 1; i--){
+                fact = fact * i;
+        }
+        document.getElementById("answer").value = fact;
+        }
+    </script> 
+</head>
+
+<body>
+    Enter a number:- <input id="n"><br><br>
+    <button onclick="msg()">Factorial</button>
+    <input id="answer">
+</body>
+
+</html>
